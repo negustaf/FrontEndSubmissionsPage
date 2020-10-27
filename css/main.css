@@ -1,0 +1,158 @@
+/*GENERAL*/
+* {
+    margin: 0;
+    padding: 0;} /*insert *{border: 1px solid red;} to highlight all css elements*/
+body {
+    font: 100%/1.5;
+    color: #3b3a36;
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Quicksand', sans-serif; 
+    padding-top: 0;
+    padding-bottom: 0;}
+   
+/*WRAPPER*/
+#wrapper {
+    width: 100%; 
+    margin: 0 auto;}
+
+/*HEADER*/ 
+header { 
+    /*position: fixed;
+    z-index: 1;*/  
+    height: 115px;
+    width: 100%;
+    background: #acdfe8;} /*light-blue*/  
+header h1{    
+    font-size: 2.5em;
+    text-align: center;
+    padding: 30px 0;
+    font-weight: lighter;}
+
+/*NAVIGATION*/ 
+.nav-wrapper .nav.fixed {    
+    position: fixed;
+    z-index: 1;
+    width: 100%; 
+    top: 0;} 
+nav ul {
+    background-color: #3b3a36;}     
+nav li {
+    display: inline-block; 
+    margin-right: -7px;
+    padding: 15px;
+    width: 140px;
+    list-style-type: none;
+    border-right: 1px solid #acdfe8;
+    cursor: pointer;}
+nav a {
+    color: #FFF;
+    text-decoration: none;
+    border: none;}
+nav li.selected {
+    background-color: #acdfe8;}
+nav li.selected-different {
+    background-color: #acdfe8;
+    border-left: 1px solid #acdfe8;}    
+nav li span {
+    color: #4e4d4a;
+	font-weight: bold;
+	border: none;} 
+nav li.nospan-different {
+	border-left: 1px solid #acdfe8;}
+nav li.nospan-different:hover {
+	color: #ebebea;
+    background-color: #4e4d4a;
+	border-left: 1px solid #acdfe8;}
+nav li.nospan:hover {
+    color: #ebebea;
+    background-color: #4e4d4a;
+    border-left: 1px solid #acdfe8;} 
+
+/*MAIN*/
+div.project h2 {
+    margin-top: 100px;
+    width: 100%;    
+    /*height: 1400px;*/
+    font-size: 1.8em;
+    font-weight: lighter;}
+div.project-buttons {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top: 55px;}
+.button {
+    height: 120px;
+    width: 700px;
+    opacity: 0.8;
+    font-family: 'Quicksand', sans-serif;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: .5s;
+    cursor: pointer;}
+.button1 {
+    font-size: 1.3em;
+    background-color: white;
+    color: #419faf; /*dark-blue*/
+    border: 1px solid #BBB;} /*dark-grey*/
+.button1:hover {
+    background-color: #acdfe8; /*light-blue*/
+    border: 1px solid #acdfe8; /*light-blue*/
+    color: #3b3a36;} /*flat-black*/
+p.worktime { /*to center p: absolute, u need left:0 & right:0 for margin: 0 auto*/
+    margin: 0 auto;
+    left: 0; 
+    right: 0;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 1.3em;    
+    overflow: hidden;}
+
+/*FOOTER*/
+footer {
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-top-color: #BBB; /*dark-grey*/
+    font-size: 1.3em;
+    width: 550px;
+    padding: 40px 0;
+    margin: 45px auto 0 auto;    
+    left: 0;
+    right: 0;
+    text-align: center;}
+
+
+@media screen and (max-width: 1080px) {
+	/*PHONE GENERAL*/
+	p {font-size: 1.1em;}
+
+    /*PHONE HEADER*/
+    header {
+        position: relative;}
+    header h1{    
+        font-size: 2.0em;
+        padding: 35px 0;}
+
+    /*PHONE NAV*/
+    nav {
+        margin-top: 0;}
+		/*nav {
+			position: relative;
+			margin: 0;
+			height: 400px;}
+		nav ul {
+			height: 576px;}
+		nav li {
+			display: block;}
+		nav a {
+			border: 0;
+			width: 150px;
+			display: block;}
+		nav span {
+		   background-color: #acdfe8;}
+		nav a, nav span {
+			font-size: 1.5em;}
+		nav a:hover {
+		    margin: 0 auto 0 auto;
+			left: 0;
+			border: 0;}*/
+}
